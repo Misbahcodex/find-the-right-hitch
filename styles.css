@@ -134,7 +134,9 @@ h1 {
 }
 .content5 {
   background-color: white;
-  padding: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
   justify-content: center;
   text-align: center;
   z-index: 1;
