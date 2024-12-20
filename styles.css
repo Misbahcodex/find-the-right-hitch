@@ -1,0 +1,388 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #ececec;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("images/car-hitch.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  color: white;
+  z-index: 1; /* Ensure content appears above the filter */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: -1; /* Place the filter below content */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.container {
+  columns: 1;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  max-width: 800px;
+  margin-left: 500px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.content1 {
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.content2 {
+  background-color: #ececec;
+  padding: 80px;
+
+  text-align: center;
+  z-index: 1;
+}
+
+.content3 {
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  background-image: url(images/car3.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  position: relative;
+
+  font-weight: 500;
+  color: white;
+}
+
+.content3 h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.content3 .divider {
+  width: 600px;
+  height: 5px;
+  background-color: #007bff;
+  margin: 10px auto 20px;
+}
+
+.content3 p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.content3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: -1; /* Place the filter below content */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 600px;
+  height: 5px;
+  background-color: #007bff;
+  margin: 10px auto 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.bg-blue {
+  padding: 50px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.bg-white {
+  background-color: white;
+  color: #1e3a8a;
+}
+
+.card {
+  position: relative;
+  height: 50vh;
+  background-image: url("images/car-hitch.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  color: white;
+  z-index: 1; /* Ensure content appears above the filter */
+  border-radius: 20px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 46, 97, 0.5); /* Adjust the opacity as needed */
+  z-index: -1; /* Place the filter below content */
+  border-radius: 20px;
+}
+.card input {
+  width: 50%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.card h2 {
+  margin-top: 90px;
+}
+
+.card button {
+  width: 50%;
+  padding: 0.5rem;
+  background: #e3342f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #cc1f1a;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e3a8a;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #0056b3;
+}
+
+.note {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.content4 {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: #1e3a8a;
+}
+.content4 h1 {
+  font-size: 2.5rem;
+  margin-top: 5px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.content4 h2 {
+  font-size: 3.5rem;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.card1 {
+  position: relative;
+
+  font-weight: 500;
+  color: white;
+  z-index: 1; /* Ensure content appears above the filter */
+  border-radius: 20px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #1e3a8a;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card2 {
+  position: relative;
+
+  font-weight: 500;
+  color: white;
+
+  border-radius: 20px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #1e3a8a;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card1 img {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card2 img {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content6 {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: #1e3a8a;
+  margin-top: 90px;
+}
+.content6 h1 {
+  font-size: 2.5rem;
+  margin-top: 5px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.page1 {
+  background-color: white;
+}
+
+.content7 {
+  margin-top: 20px;
+  font-weight: 200;
+  color: #1e3a8a;
+}
+.btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn1 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn2 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.price {
+  font: bold;
+  margin-top: 10px;
+}
+
+.h2 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.btn-hover {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
